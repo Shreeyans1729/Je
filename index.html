@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Birthday Surprise</title>
-    <link rel="stylesheet" href="./styles.css">
     <style>
         body {
             margin: 0;
@@ -17,14 +16,13 @@
         .top-image {
             width: 100%;
             max-width: 600px;
-            margin: 20px auto;
+            margin: 50px auto 20px auto;
             display: block;
         }
 
-        /* Style for Next button under image */
         .next-btn {
             display: inline-block;
-            margin-top: 15px;
+            margin-top: 20px;
             padding: 12px 25px;
             font-size: 18px;
             cursor: pointer;
@@ -40,95 +38,13 @@
         .next-btn:hover {
             background: #0056b3;
         }
-
-        .bottom-link {
-            position: fixed;
-            bottom: 15px;
-            right: 20px;
-            background: #007bff;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .bottom-link:hover {
-            background: #0056b3;
-        }
-
-        .gif_container {
-            margin: 20px 0;
-        }
-
-        .buttons {
-            margin: 20px 0;
-        }
-
-        .btn {
-            padding: 12px 25px;
-            font-size: 18px;
-            margin: 10px;
-            cursor: pointer;
-            border: none;
-            border-radius: 8px;
-            transition: 0.3s;
-        }
-
-        #yesButton {
-            background: #28a745;
-            color: white;
-        }
-
-        #yesButton:hover {
-            background: #218838;
-        }
-
-        #noButton {
-            position: absolute;
-            background: #dc3545;
-            color: white;
-        }
     </style>
-</head> 
+</head>
 <body>
-    <div class="container">
+    <!-- Only Image -->
+    <img src="images.jpeg" alt="Happy Birthday" class="top-image">
 
-        <!-- Added Birthday Image at the Top -->
-        <img src="images.jpeg" alt="Happy Birthday" class="top-image">
-
-        <!-- Next button below the image -->
-        <a href="https://shreeyans1729.github.io/Bday/" class="next-btn">Next ➡️</a>
-
-        <div>
-            <h1 style="font-family: 'Amsterdam Four', cursive;">It's your birthday 🎈🎂</h1>
-            <h1 class="header_text">Are you okay with me sending this to you?? 🤔</h1>
-            <h1 class="header_text">Would you like to open further? 💬</h1>
-        </div>
-
-        <div class="gif_container">
-            <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtZ2JiZDR0a3lvMWF4OG8yc3p6Ymdvd3g2d245amdveDhyYmx6eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif" 
-                 alt="Cute animated illustration">
-        </div>
-
-        <div class="buttons">
-            <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
-            <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
-        </div>
-    </div>
-
-    <script>
-        function nextPage() {
-            window.location.href = "https://shreeyans1729.github.io/Bday/";
-        }
-
-        function moveButton() {
-            var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
-            var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
-            document.getElementById('noButton').style.left = `${x}px`;
-            document.getElementById('noButton').style.top = `${y}px`;
-        }
-    </script>
-</body> 
+    <!-- Next Button -->
+    <a href="https://shreeyans1729.github.io/B-day-/" class="next-btn">Next ➡️</a>
+</body>
 </html>
